@@ -49,7 +49,7 @@ public class TaigaProjectsTest  extends TestBase {
     public void projectPage() {
         issue = ApiHelper.createIssue(project.get("id").getAsInt());
         login("training@gmail.com", "Tumo123!");
-        ProjectPage projectPage = new ProjectPage(project);
+        ProjectPage projectPage = (ProjectPage) new ProjectPage(project).get();
         assertEquals(projectPage.getProjectName(), project.get("name").getAsString(), "Opened Project Page is incorrect!");
 
     }

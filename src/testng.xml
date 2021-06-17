@@ -1,0 +1,12 @@
+
+<suite name="Suite-3" verbose="1">
+
+    <listeners>
+        <listener class-name="listeners.SuiteListener"/>
+    </listeners>
+    <test name="all-packages" parallel="methods" thread-count="5">
+        <packages>
+            <package name=".*" />
+        </packages>
+    </test>
+</suite>

@@ -24,4 +24,13 @@ public class HomePage extends PageBase {
         return (ProjectsPage) new ProjectsPage();
     }
 
+    @Override
+    protected void load() {
+
+    }
+
+    @Override
+    protected void isLoaded() throws Error {
+
+    }
 }

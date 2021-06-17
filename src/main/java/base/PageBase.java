@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.LoadableComponent;
 import setup.DriverHelper;
 
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
  * @author Sargis Sargsyan on 6/7/21
  * @project internal-training-exam
  */
-public abstract class PageBase {
+public abstract class PageBase<T extends LoadableComponent<T>> extends LoadableComponent<T> {
     private static final Logger LOGGER = Logger.getLogger("BasePage");
     protected WebDriver driver;
     protected static final String BASE_URL = System.getProperty("selenium.url", "https://tree.taiga.io/");

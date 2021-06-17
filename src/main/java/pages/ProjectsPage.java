@@ -24,6 +24,16 @@ public class ProjectsPage extends PageBase {
         driver.get(getUrl());
     }
 
+    @Override
+    protected void load() {
+
+    }
+
+    @Override
+    protected void isLoaded() throws Error {
+
+    }
+
     public void clickProjectsIcon() {
         WaitHelper.getWait().waitForElementToBeVisible(projectsIcon);
         click(projectsIcon);

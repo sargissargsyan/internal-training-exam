@@ -32,8 +32,9 @@
                             <name>chromedriver</name>
                             <platform>mac</platform>
                             <bit>64</bit>
+                            <url>https://chromedriver.storage.googleapis.com/91.0.4472.101/chromedriver_mac64.zip</url>
                             <customFileName>chromedriver</customFileName>
-                            <version>90.0.4430.24</version>
+                            <version>91.0.4472.101</version>
                         </driver>
                         <driver>
                             <name>geckodriver</name>

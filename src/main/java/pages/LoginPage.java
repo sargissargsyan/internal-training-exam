@@ -14,6 +14,16 @@ public class LoginPage extends PageBase {
     }
 
     @Override
+    protected void load() {
+
+    }
+
+    @Override
+    protected void isLoaded() throws Error {
+
+    }
+
+    @Override
     public String getUrl() {
         return BASE_URL + "/login";
     }

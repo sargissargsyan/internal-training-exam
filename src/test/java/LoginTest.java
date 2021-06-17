@@ -14,7 +14,7 @@ public class LoginTest extends TestBase {
     public void loginViaApi() {
         LoginPage taigaLoginPage = new LoginPage();
         login("training@gmail.com", "Tumo123!");
-        HomePage homePage = (HomePage) new HomePage();
+        HomePage homePage = new HomePage();
         homePage.clickProjectsIcon();
 
         assertTrue(homePage.getCurrentUrl().contains("projects"),
