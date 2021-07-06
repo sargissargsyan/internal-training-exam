@@ -1,8 +1,8 @@
-
 <suite name="Suite-3" verbose="1">
 
     <listeners>
         <listener class-name="listeners.SuiteListener"/>
+        <listener class-name="listeners.RetryTransformer"/>
     </listeners>
     <test name="all-packages" parallel="methods" thread-count="5">
         <packages>
